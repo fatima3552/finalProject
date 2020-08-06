@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical">
+
+
+<fragment
+    android:id="@+id/nav_host_fragment"
+    android:name="androidx.navigation.fragment.NavHostFragment"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:defaultNavHost="true"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:navGraph="@navigation/mobile_navigation" />
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:src="@drawable/profile"
+    android:padding="30dp"
+    />
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Name"
+    android:digits="qwertyuioplkjhgfdsazxcvbnm  QWERTYUIOPLKJHGFDSAXZCVBNM"
+    android:focusable="true">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed1"
+        android:layout_gravity="top|center"/>
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="phone Number">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed2"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:layout_gravity="top|center"
+        android:layout_marginBottom="15dp"/>
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed3"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="top|center"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="password"
+    app:passwordToggleEnabled="true">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed4"
+        android:inputType="textPassword"
+        android:layout_gravity="top|center"
+        android:layout_marginBottom="15dp"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Cnfirm passwor"
+    app:passwordToggleEnabled="true">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed5"
+        android:inputType="textPassword"
+
+        android:layout_gravity="top|center"
+        android:layout_marginBottom="15dp"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed6"
+        android:maxLength="13"
+        android:inputType="number"
+        android:hint="CNIC"
+
+        android:layout_gravity="top|center"
+        android:layout_marginBottom="15dp"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/bcmju"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feebback"
+        android:onClick="rating"
+        android:textColor="#ffffff"
+        android:layout_gravity="top|center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/rounded_button"
+        />
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enter"
+        android:text="Submit Data"
+        android:textColor="#ffffff"
+        android:enabled="false"
+        android:layout_gravity="top|center"
+        android:background="@drawable/rounded_button"
+
+        />
+</LinearLayout>
+</LinearLayout>

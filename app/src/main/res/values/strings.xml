@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">project3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string-array name="services">
+        <item>Electrician </item>
+        <item>Plumber </item>
+        <item>Cook </item>
+        <item>Cleaner </item>
+        <item>Carpenter </item>
+        <item>Constructor </item>
+
+    </string-array>
+
+
+    <string-array name="aa">
+        <item>H-10</item>
+        <item>H-11</item>
+        <item>F-7</item>
+        <item>F-9</item>
+        <item>G-10</item>
+        <item>F-10</item>
+        <item>I-10</item>
+        <item>E-11</item>
+        <item>G-13</item>
+
+    </string-array>
+
+</resources>
